@@ -1,4 +1,3 @@
-import Header from '@/Components/Layout/Header';
 import Hero from '@/Components/Layout/Hero';
 import HomeMenu from '@/Components/Layout/HomeMenu';
 import SectionHeader from '@/Components/Layout/SectionHeader';
@@ -6,15 +5,14 @@ import SectionHeader from '@/Components/Layout/SectionHeader';
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
       <HomeMenu />
-      <section className='text-center my-16'>
+      <section className='my-16 text-center'>
         <SectionHeader
           mainHeading='Our story'
           subHeading='About us'
         />
-        <div className='max-w-2xl mx-auto mt-4 text-gray-500 flex flex-col gap-4'>
+        <div className='mx-auto mt-4 flex max-w-2xl flex-col gap-4 text-gray-500'>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
             dolor porro. Quia laboriosam vel voluptatum explicabo. Deserunt nam
@@ -38,7 +36,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className='text-center my-8'>
+      <section className='my-8 text-center'>
         <SectionHeader
           mainHeading='Don	&#8218;t hesitate'
           subHeading='Contact us'
@@ -46,15 +44,12 @@ export default function Home() {
         <div className='mt-8'>
           <a
             href='tel:+912524243532'
-            className='text-3xl underline text-blue-500'
+            className='text-3xl text-blue-500 underline'
           >
             +91 2524243532
           </a>
         </div>
       </section>
-      <footer className='border-t p-8 text-center text-gray-500 mt-16'>
-        &copy; 2024 All rights reserved
-      </footer>
     </>
   );
 }

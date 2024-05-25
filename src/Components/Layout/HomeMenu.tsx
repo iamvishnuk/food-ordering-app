@@ -1,6 +1,8 @@
-import Image from 'next/image';
 import MenuItem from '../Menu/MenuItem';
+
 import SectionHeader from './SectionHeader';
+
+import Image from 'next/image';
 
 type Props = {};
 
@@ -8,7 +10,7 @@ export default function HomeMenu({}: Props) {
   return (
     <div className='w-full'>
       <div className='relative'>
-        <div className='absolute left-0 -top-[4.5rem] -z-10'>
+        <div className='absolute -top-[4.5rem] left-0 -z-10'>
           <Image
             src={'/sallad1.png'}
             alt='sallad'
@@ -16,7 +18,7 @@ export default function HomeMenu({}: Props) {
             height={189}
           />
         </div>
-        <div className='absolute right-0 -top-36 -z-10'>
+        <div className='absolute -top-36 right-0 -z-10'>
           <Image
             src={'/sallad2.png'}
             alt='sallad'
